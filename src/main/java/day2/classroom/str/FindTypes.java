@@ -19,25 +19,34 @@ public class FindTypes {
 					ii) Character.isDigit
 					iii)Character.isSpaceChar
 					iv) else -> consider as special character
-		*/
+		 */
 
 		// Print the count here
-		
+
 		char[] charArray = test.toCharArray();
-		
-	int size = charArray.length;
-					
+
+		int size = charArray.length;
+
 		for (int i = 0; i < size-1; i++) {
-			
+
 			if (Character.isDigit(charArray[i])) {
-				
-				
-				
+
+				num++;
 			}
-			
-		}
-		
-		
+			else if (Character.isAlphabetic(charArray[i])) {
+				letter++;				
+			}
+
+			else if (Character.isSpaceChar(charArray[i])) {
+
+				space++;
+			}
+
+			else {
+				specialChar++;
+			} 
+
+		}			
 		System.out.println("letter: " + letter);
 		System.out.println("space: " + space);
 		System.out.println("number: " + num);
