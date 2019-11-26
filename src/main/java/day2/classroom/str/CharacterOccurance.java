@@ -34,8 +34,7 @@ public class CharacterOccurance {
 			
 		}
 		
-		
-		// Print the count here
+				// Print the count here
 		System.out.println("Total count of character("+ch+"): " + totalCount);
 		
 	}
